@@ -21,7 +21,9 @@
 */
 
 function noSpaces(word) {
-  // 여기에서 작업하세요.
+  let answer = "";
+  answer = word.replaceAll(" ", "");
+  return answer;
 }
-
+// console.log(noSpaces("code c a mp"));
 module.exports = noSpaces;

@@ -16,7 +16,7 @@
       a: 1,
       b: 2,
     };
-    
+
     const obj2 = {
       b: 3,
       c: 3,
@@ -30,7 +30,15 @@
 */
 
 function addNew(obj1, obj2) {
-  // 여기에서 작업하세요.
+  let a = {};
+  for (let i of obj1) {
+    for (let t in obj2) {
+      if (i === t) {
+        a[t] = obj2[t];
+      }
+    }
+  }
+  return;
 }
 
 module.exports = addNew;
